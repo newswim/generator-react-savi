@@ -1,3 +1,15 @@
+```
+______   ________   __   __   ________      ______   ______   ___   __    _________  ______    ______   __       ______      
+/_____/\ /_______/\ /_/\ /_/\ /_______/\    /_____/\ /_____/\ /__/\ /__/\ /________/\/_____/\  /_____/\ /_/\     /_____/\     
+\::::_\/_\::: _  \ \\:\ \\ \ \\__.::._\/    \:::__\/ \:::_ \ \\::\_\\  \ \\__.::.__\/\:::_ \ \ \:::_ \ \\:\ \    \::::_\/_    
+\:\/___/\\::(_)  \ \\:\ \\ \ \  \::\ \      \:\ \  __\:\ \ \ \\:. `-\  \ \  \::\ \   \:(_) ) )_\:\ \ \ \\:\ \    \:\/___/\   
+ \_::._\:\\:: __  \ \\:\_/.:\ \ _\::\ \__    \:\ \/_/\\:\ \ \ \\:. _    \ \  \::\ \   \: __ `\ \\:\ \ \ \\:\ \____\_::._\:\  
+   /____\:\\:.\ \  \ \\ ..::/ //__\::\__/\    \:\_\ \ \\:\_\ \ \\. \`-\  \ \  \::\ \   \ \ `\ \ \\:\_\ \ \\:\/___/\ /____\:\
+   \_____\/ \__\/\__\/ \___/_( \________\/     \_____\/ \_____\/ \__\/ \__\/   \__\/    \_\/ \_\/ \_____\/ \_____\/ \_____\/
+```
+
+
+
 # generator-react-savi [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A Yeoman generator for generating SAVI generations
 
@@ -15,6 +27,14 @@ Then generate your new project:
 ```bash
 yo react-savi
 ```
+
+## TODO
+
+- [ ] Determine project structure based on new SAVI structure
+- [ ] Take options for creating test stubs
+- [ ] Determine whether projects will use React Router or Flow Router
+- [x] Make a cool ASCI banner
+
 
 ## Getting To Know Yeoman
 

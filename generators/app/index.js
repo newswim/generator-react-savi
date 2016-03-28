@@ -1,41 +1,27 @@
 'use strict';
+//Require dependencies
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 
-module.exports = yeoman.Base.extend({
 
-  prompting: function () {
+module.exports = yeoman.generators.Base.extend({
+  //Configurations will be loaded here.
+  //Ask for user input
+  prompting: function() {
     var done = this.async();
-
-    // Have Yeoman greet the user.
-    this.log(yosay(
-      'Welcome to the lovely ' + chalk.red('generator-react-savi') + ' generator!'
-    ));
-
-    var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
-
-    this.prompt(prompts, function (props) {
-      this.props = props;
-      // To access props later use this.props.someAnswer;
-
+    this.prompt({
+      type: 'input',
+      name: 'name',
+      message: 'Your project name',
+      //Defaults to the project's folder name if the input is skipped
+      default: this.appname
+    }, function(answers) {
+      this.props = answers
+      this.log(answers.name);
       done();
     }.bind(this));
   },
+  //Writing Logic here
 
-  writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
-  },
-
-  install: function () {
-    this.installDependencies();
-  }
 });
